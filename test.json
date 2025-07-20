@@ -1,0 +1,45 @@
+
+{
+    "title": {
+        "left": "center"
+    },
+    "tooltip": {},
+    "legend": {
+        "orient": "vertical",
+        "left": "left"
+    },
+    "xAxis": {
+        "type": "category",
+        "data": ["2015年", "2016年", "2017年", "2018年", "2019年", "2020年", "2021年", "20112年", "2023年", "2024年"]
+    },
+    "yAxis": [
+        {
+            "type": "value",
+            "name": "全社会用电量（亿千瓦时）"
+        },
+        {
+            "type": "value",
+            "name": "增速（%）",
+            "position": "right"
+        }
+    ],
+    "series": [
+        {
+            "name": "全社会用电量（亿千瓦时）",
+            "type": "bar",
+            "label": {
+                "show": true
+            },
+            "data": [55500, 59198, 63077, 68449, 72255, 75110, 83128, 86372, 92241, 98521]
+        },
+        {
+            "name": "增速（%）",
+            "label": {
+                "show": true
+            },
+            "type": "line",
+            "yAxisIndex": 1,
+            "data": [0.5, 5.0, 6.6, 8.5, 4.5, 3.1, 10.3, 3.6, 6.7, 6.8]
+        }
+    ]
+}

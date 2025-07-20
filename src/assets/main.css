@@ -1,0 +1,34 @@
+@import './base.css';
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+body{
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  /* background: #121212; */
+}
+
+@layer components {
+  .aspect-16-9-80 {
+    aspect-ratio: 16 / 9;
+    height: calc(80vh);
+  }
+}
+
+@font-face {
+  font-family: "Futura";
+  font-style: normal;
+  /* font-weight: 200 700; */
+  font-display: swap;
+  src: url("fonts/Futura.otf") format('otf');
+}
+
+@font-face {
+  font-family: "Dep";
+  font-style: normal;
+  /* font-weight: 200 700; */
+  font-display: swap;
+  src: url("fonts/DepartureMono-Regular.woff2") format('woff2');
+}
